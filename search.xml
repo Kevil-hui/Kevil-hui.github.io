@@ -1,26 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>hello.hexo</title>
-    <url>/2020/07/13/hello-hexo/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2020/07/13/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+    <title>一道社工CTF题引发的思考</title>
+    <url>/2020/07/16/%E4%B8%80%E9%81%93%E7%A4%BE%E5%B7%A5CTF%E9%A2%98%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/</url>
+    <content><![CDATA[<h1 id="一道社工CTF题引发的思考"><a href="#一道社工CTF题引发的思考" class="headerlink" title="一道社工CTF题引发的思考"></a>一道社工CTF题引发的思考</h1><p>Author: KEVIL<br>Publishing/Release Date: May 24, 2019<br>Score /5: ⭐️⭐️⭐️<br>Status: Finished<br>Tags: CTF<br>Type: Article</p>
+<p><strong>来自深信服杯CTFday2的一道社工题，比赛第一天打完后，先是群猪给出提示有签到题，社工类型（应出题人大佬要求，将所有个人信息都打码）</strong></p>
+<p><img src="CTF%207049545e8e6d4b588534964b7c07655d/Untitled.png" alt="CTF%207049545e8e6d4b588534964b7c07655d/Untitled.png"></p>
+<p><img src="CTF%207049545e8e6d4b588534964b7c07655d/Untitled%201.png" alt="CTF%207049545e8e6d4b588534964b7c07655d/Untitled%201.png"></p>
+<p><strong>第二天，没有单独出社工类，misc中有一道520表白的题，提示marx的女朋友Tina丢了，你能帮她找回来吗，附件：photo.dat</strong></p>
+<p><strong>信息整理：群管理的备注就是Tina，然后没有见到marx，没看到今天的签到题，昨天签到题给了一个公众号回复flag完成签到题，那个公众号还有别的内容没看了，回到昨天那个公众号，发现有作者联系方式</strong></p>
+<p><img src="CTF%207049545e8e6d4b588534964b7c07655d/Untitled%202.png" alt="CTF%207049545e8e6d4b588534964b7c07655d/Untitled%202.png"></p>
+<p><img src="CTF%207049545e8e6d4b588534964b7c07655d/Untitled%203.png" alt="CTF%207049545e8e6d4b588534964b7c07655d/Untitled%203.png"></p>
+<p><strong>添加作者微信时留言：帮你找到了Tina</strong></p>
+<p><img src="CTF%207049545e8e6d4b588534964b7c07655d/Untitled%204.png" alt="CTF%207049545e8e6d4b588534964b7c07655d/Untitled%204.png"></p>
+<p><img src="CTF%207049545e8e6d4b588534964b7c07655d/Untitled%205.png" alt="CTF%207049545e8e6d4b588534964b7c07655d/Untitled%205.png"></p>
+<p><strong>hint：公众号里还有关键信息</strong></p>
+<p><strong>在历史消息中发现一篇文章讲的是关于Dat文件的，而我下载的附件文件名：photo.dat</strong></p>
+<p><img src="CTF%207049545e8e6d4b588534964b7c07655d/Untitled%206.png" alt="CTF%207049545e8e6d4b588534964b7c07655d/Untitled%206.png"></p>
+<p><img src="CTF%207049545e8e6d4b588534964b7c07655d/Untitled%207.png" alt="CTF%207049545e8e6d4b588534964b7c07655d/Untitled%207.png"></p>
+<p><strong>hint:转换脚本+留言（每个账号或者客户端对那个异或值都是不一样的，所以，小伙伴们如果需要还原dat文件的话，还是要自己用计算器异或处理一波哦。看看这个值是多少哈。）</strong></p>
+<p><strong>按照提示得到异或值0x33，用脚本（左图）转换出图片（右图），</strong></p>
+<p><img src="CTF%207049545e8e6d4b588534964b7c07655d/Untitled%208.png" alt="CTF%207049545e8e6d4b588534964b7c07655d/Untitled%208.png"></p>
+<p><img src="CTF%207049545e8e6d4b588534964b7c07655d/Untitled%209.png" alt="CTF%207049545e8e6d4b588534964b7c07655d/Untitled%209.png"></p>
+<p><strong>hint：可以百度参数信息，发现ECI和TAC可以定位</strong></p>
+<p><img src="CTF%207049545e8e6d4b588534964b7c07655d/Untitled%2010.png" alt="CTF%207049545e8e6d4b588534964b7c07655d/Untitled%2010.png"></p>
+<p><a href="http://www.gpsspg.com/bs.htm" target="_blank" rel="noopener">http://www.gpsspg.com/bs.htm</a></p>
+<p><strong>输入参数信息得到一个精确地址，flag{XX学校XX校区}</strong></p>
+<p><img src="CTF%207049545e8e6d4b588534964b7c07655d/Untitled%2011.png" alt="CTF%207049545e8e6d4b588534964b7c07655d/Untitled%2011.png"></p>
+<p>从这道题引发的思考：</p>
+<p>1.在微信PC版的文件夹，可以找到自己的账号所在文件夹，进入Data文件夹可以看到很多 .dat文件</p>
+<p>2..dat文件经过加密处理，用公众号给出的python脚本可批量还原</p>
+<p>3.可能有的文件是图片，也有的是视频，可以直观的获取文件所有者的信息，或者查看文件属性，可能带有隐私信息</p>
+<p>4.总结：微信.dat文件加密是不可信的，一旦泄露很有可能暴露隐私，如果文件属性存在</p>
+<p><strong>ECI和TAC</strong></p>
+<p>的相关参数，便可直接爆出图片所在地，如果你经常在朋友圈发自拍照，你的位置信息就很有可能暴露，位置精确度如下图：</p>
+<p><img src="CTF%207049545e8e6d4b588534964b7c07655d/Untitled%2012.png" alt="CTF%207049545e8e6d4b588534964b7c07655d/Untitled%2012.png"></p>
 ]]></content>
   </entry>
 </search>
